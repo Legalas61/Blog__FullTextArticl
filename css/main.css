@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: DevBlog;
+    src: url(fonts/arnamu.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: DevBlog;
+    src: url(fonts/arnamub.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: DevBlog;
+    src: url(fonts/arnamubi.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: DevBlog;
+    src: url(fonts/arnamui.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+body{
+  background-color: #252425;
+  color: #ccc;
+  font-family: "DevBlog", arial, sans-serif;
+  border: 2vw solid #1E1D1E;
+  height: 100%;
+}
+article{
+  width: 90%;
+  margin: 0 auto;
+}
+article p,article ul li{
+  margin: 6px 0;
+  font-size: 1.4rem;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+}
+article p.column{
+  columns: 2 12em;
+  column-width: 50%;
+  column-gap: 6em;
+  margin-bottom: 75px;
+  column-rule: 1px solid #6C6C6C;
+}
+article ul li{
+  list-style: upper-roman;
+}
+article figure{
+  display: block;
+}
+article figure figcaption{
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+}
+header{
+  height: 50px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10%;
+  padding-left: 5%;
+}
+header a{
+  color: #6C6C6C;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 10px 0;
+  display: block;
+  width: 45px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #6C6C6C;
+}
+header h1{
+  margin: 39px 0;
+  display: block;
+  color: #fff;
+}
+.skroll{
+  animation: topDowm 1s forwards;
+  background-color: rgba(37,36,37, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.skrollH1{
+  margin: 10px 7%;
+  color: #6C6C6C;
+}
+footer{
+  margin-top: 100px;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  background-color: #1E1D1E;
+  align-self: center;
+  justify-content: space-around;
+}
+footer figure{
+  margin-top: 45px;
+}
+footer figure a{
+  content: "../../img/logo.svg";
+  width: 150px;
+  color: #ccc;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+footer figure figcaption{
+  justify-content: center;
+}
+@keyframes topDowm {
+  from{
+    top:-50px
+  }
+  to{
+    top: 0;
+  }
+}
